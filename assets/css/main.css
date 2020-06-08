@@ -1,0 +1,50 @@
+@tailwind 'tailwindcss/base';
+
+html {
+  font-size: 13.5px;
+}
+h1 {
+  @apply text-2xl;
+}
+h2 {
+  @apply text-xl;
+}
+h3 {
+  @apply text-lg;
+}
+a {
+  @apply text-blue-600;
+}
+img {
+  @apply max-w-full max-h-full;
+}
+ol {
+  list-style: decimal;
+  list-style-position: inside;
+}
+
+@keyframes autofill {
+  to {
+    color: var(--tc-normal);
+    background: rgba(#808080, .6);
+  }
+}
+
+@tailwind 'tailwindcss/components';
+@tailwind 'tailwindcss/utilities';
+
+.custom-scroll {
+  @apply scrolling-touch;
+}
+
+.custom-scroll::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  @apply bg-layout;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #2e2e32;
+  border-radius: 2px;
+}

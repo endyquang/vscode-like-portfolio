@@ -5,7 +5,8 @@
   </head>
   <body {{ BODY_ATTRS }}>
     {{ APP }}
-    <form name="contactme" data-netlify="true" action="/thanks" hidden class="hidden">
+    <form name="contactme" data-netlify="true" action="/thanks" netlify-honeypot="bot-field" hidden class="hidden">
+      <input type="hidden" name="form-name" value="contactme">
       <input type="email" name="email">
       <textarea name="message"></textarea>
     </form>

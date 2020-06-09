@@ -69,6 +69,8 @@ export default {
   data () {
     return {
       techs: [
+        'HTML5',
+        'CSS3',
         'Javascript',
         'Typescript',
         'Nodejs',

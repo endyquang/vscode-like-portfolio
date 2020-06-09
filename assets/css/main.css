@@ -2,6 +2,7 @@
 
 html {
   font-size: 13.5px;
+  @apply bg-layout;
 }
 h1 {
   @apply text-2xl;
@@ -18,16 +19,19 @@ a {
 img {
   @apply max-w-full max-h-full;
 }
-ol {
-  list-style: decimal;
-  list-style-position: inside;
-}
 
 @keyframes autofill {
   to {
-    color: var(--tc-normal);
-    background: rgba(#808080, .6);
+    color: var(#fafafa);
+    background: rgba(#2d3748, .6);
   }
+}
+
+input:-webkit-autofill {
+  animation-name: autofill;
+  animation-fill-mode: both;
+  -webkit-text-fill-color: #cbd5e0;
+  -webkit-box-shadow: 0 0 0px 100px #2d3748 inset!important;
 }
 
 @tailwind 'tailwindcss/components';
@@ -36,10 +40,12 @@ ol {
 @media screen and (min-width: 768px) {
   html {
     @apply scrolling-touch;
+    scrollbar-color: #2e2e32 #181818;
+    scrollbar-width: auto;
   }
   html::-webkit-scrollbar {
-      width: 10px;
-      height: 10px;
+    width: 10px;
+    height: 10px;
   }
   html::-webkit-scrollbar-track {
     background-color: #181818;

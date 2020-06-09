@@ -1,11 +1,11 @@
 <template>
-  <auto-line-wrapper class="h-full text-gray-400 overflow-auto custom-scroll pr-4" @click.native="onBgClick">
+  <auto-line-wrapper class="pr-4" @click.native="onBgClick">
     <div class="block lg:hidden">
       <br>
       <br>
     </div>
 
-    <div class="lg:max-w-3xl xl:max-w-5xl pb-48 lg:pb-0">
+    <div class="lg:max-w-3xl xl:max-w-5xl pb-48">
       <span class="text-blue-300">{</span>
       <div class="ml-6">
         <key-value-pair :metadata="metadata" field="name" />
@@ -70,6 +70,7 @@ export default {
     AutoLineWrapper,
     KeyValuePair
   },
+  scrollToTop: true,
   asyncData ({ params, error }) {
     return fetch(`/projects/${params.id}.json`)
       .then(res => res.json())

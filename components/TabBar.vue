@@ -9,10 +9,13 @@
     <li
       v-for="(tab, i) in tabs"
       :key="tab.path"
-      class="flex-shrink-0 inline-block h-12 border-l"
-      :class="[activePath !== tab.path && i !== 0 ? 'border-layout' : 'border-transparent']"
+      class="flex-shrink-0 h-12"
+      :class="[
+        i === 0 ? '' : 'border-l',
+        activePath !== tab.path ? 'border-layout hidden lg:inline-block' : 'border-transparent inline-block'
+      ]"
       :style="{
-        maxWidth: `${1 / tabs.length * 100}%`
+        maxWidth: $screen.lgDown ? '' : `${1 / tabs.length * 100}%`
       }"
     >
       <file-name-with-icon
@@ -22,7 +25,7 @@
           activePath === tab.path ? 'bg-layout' : 'hover:bg-aside--hover'
         ]"
       >
-        <span v-if="tabs.length > 1" class="flex-shrink-0 ml-2 text-gray-600 hover:text-gray-200 p-2 -m-2" @click.stop.prevent="closeTab(tab)">
+        <span v-if="$screen.lg && tabs.length > 1" class="flex-shrink-0 ml-2 text-gray-600 hover:text-gray-200 p-2 -m-2" @click.stop.prevent="closeTab(tab)">
           <b-icon
             icon="times"
             size="sm"

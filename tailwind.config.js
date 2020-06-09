@@ -37,6 +37,9 @@ module.exports = {
       screens: {
         '2xl': '1536px'
       },
+      spacing: {
+        100: '25rem'
+      },
       width: {
         100: '25rem'
       },

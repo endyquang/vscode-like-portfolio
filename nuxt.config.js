@@ -11,7 +11,7 @@ export default {
     title,
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=0' },
       { hid: 'description', name: 'description', content: description },
 
       { hid: 'og:site_name', property: 'og:site_name', content: title },
@@ -86,6 +86,7 @@ export default {
   },
 
   server: {
+    host: '0.0.0.0',
     port: 9000
   }
 }

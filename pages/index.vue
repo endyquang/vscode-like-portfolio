@@ -1,5 +1,5 @@
 <template>
-  <auto-line-wrapper class="h-full overflow-auto custom-scroll pr-4 text-gray-400">
+  <auto-line-wrapper class="pr-4">
     <br>
     <br>
 

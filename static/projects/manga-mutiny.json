@@ -1,0 +1,53 @@
+{
+  "name": "Mangamutiny",
+  "url": "https://mangamutiny.org",
+  "description": "A community driven manga viewing project",
+  "client": "Mangamutiny team",
+  "achievement": "Delivering content to thousands of manga readers a day with near 100% users statisfaction",
+  "teamSize": 1,
+  "duration": "4 months (2019 Aug - 2020 Jan)",
+  "roles": [
+    "Solo developer",
+    "Backend development",
+    "Frontend development",
+    "UI/UX desgign for admin site",
+    "Software architect",
+    "Database design",
+    "Database management",
+    "Server management"
+  ],
+  "techs": [
+    "Node.js",
+    "Express.js",
+    "Vue.js",
+    "Nuxt.js",
+    "MongoDB.js",
+    "Redis",
+    "Websocket",
+    "Jest",
+    "SCSS",
+    "Tailwindcss",
+    "Progressive web app",
+    "Linux",
+    "Nginx",
+    "Git",
+    "Firebase Cloud Messaging",
+    "AWS S3",
+    "Cloudflare"
+  ],
+  "features": [
+    "Manga related entities management",
+    "User management",
+    "SEO optimization",
+    "Speed optimization",
+    "Real-time notification",
+    "Flexible theme & layout",
+    "Scrape other sources with real-time UI and automation"
+  ],
+  "images": [
+    "/projects/res/mm01.png",
+    "/projects/res/mm02.png",
+    "/projects/res/mm03.png",
+    "/projects/res/mm04.png"
+  ]
+}

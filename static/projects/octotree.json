@@ -1,0 +1,38 @@
+{
+  "name": "Octotree",
+  "url": "https://github.com/ovity/octotree",
+  "description": "GitHub on steroids. Open source version",
+  "client": "",
+  "achievement": "Help hundred thousands of developers to work comfortably and productively. Have gained more than 20k stars on Github",
+  "teamSize": 9999,
+  "roles": [
+    "Collaborator",
+    "Resolve issues",
+    "Review pull request",
+    "Propose new features",
+    "Enhance code quality",
+    "Ensure Github compability",
+    "Ensure browsers compability"
+  ],
+  "duration": "Aug 2019 - now",
+  "techs": [
+    "Javascript",
+    "JQuery",
+    "Gulp",
+    "Git",
+    "Github",
+    "Less",
+    "Service worker",
+    "Browser extension"
+  ],
+  "features": [
+    "Show all repo's files in a tree",
+    "With hotkeys",
+    "No rate limit with access_token",
+    "Work with private repo"
+  ],
+  "images": [
+    "/projects/res/oc01.png",
+    "/projects/res/oc02.png"
+  ]
+}

@@ -21,7 +21,8 @@
   },
   "dependencies": {
     "nuxt": "^2.0.0",
-    "vue2-transitions": "^0.3.0"
+    "vue2-transitions": "^0.3.0",
+    "vuedraggable": "^2.23.2"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",

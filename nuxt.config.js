@@ -30,6 +30,17 @@ export default {
       { rel: 'stylesheet', href: 'href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap' }
     ]
   },
+
+  generate: {
+    routes: [
+      '/project/unisoft-online-exam',
+      '/project/manga-mutiny',
+      '/project/octotree',
+      '/project/octotree-pro',
+      '/project/ny-real-estate'
+    ]
+  },
+
   /*
   ** Customize the progress-bar color
   */
@@ -46,7 +57,8 @@ export default {
   */
   plugins: [
     '@/plugins/fa',
-    '@/plugins/transition'
+    '@/plugins/transition',
+    { src: '@/plugins/screenWidth', mode: 'client' }
   ],
   /*
   ** Nuxt.js dev-modules

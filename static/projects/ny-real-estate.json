@@ -1,0 +1,47 @@
+{
+  "name": "NY Real Estate",
+  "url": "https://ny-hn.com",
+  "description": "NY Real Estate company official website and rental management systeem",
+  "client": "NY Real Estate co.ltd",
+  "achievement": "",
+  "teamSize": 1,
+  "duration": "3 months (2019 May - 2019 Aug)",
+  "roles": [
+    "Solo developer",
+    "Backend development",
+    "Frontend development",
+    "Database design",
+    "UI/UX Design",
+    "Software architect"
+  ],
+  "techs": [
+    "Wordpress",
+    "Firebase Cloud Function",
+    "Firebase Cloud Messaging",
+    "Firebase hosting",
+    "Firestore",
+    "Node.js",
+    "Express.js",
+    "Vue.js",
+    "SCSS",
+    "Tailwindcss",
+    "Git"
+  ],
+  "features": [
+    "Company and services introduction",
+    "Multilingual",
+    "Lead generation",
+    "Property listing",
+    "Rental management",
+    "Payment management",
+    "Tenants mangaement",
+    "Document management",
+    "Notification & announcement"
+  ],
+  "images": [
+    "/projects/res/ny01.png",
+    "/projects/res/ny02.png",
+    "/projects/res/ny03.png",
+    "/projects/res/ny04.png"
+  ]
+}

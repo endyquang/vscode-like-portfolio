@@ -1,0 +1,49 @@
+{
+  "name": "Octotree Pro",
+  "url": "https://www.octotree.io/",
+  "description": "GitHub on steroids. Octotree Pro version",
+  "client": "Octotree Pro team",
+  "achievement": "Trusted by software developers from over 3,000 companies",
+  "teamSize": 6,
+  "duration": "Sep 2019 - now",
+  "roles": [
+    "Full-stack developer",
+    "Resolve issues",
+    "Review pull requests",
+    "Propose new features",
+    "Enhance code quality",
+    "Ensure Github compability",
+    "Ensure browsers compability"
+  ],
+  "techs": [
+    "Javascript",
+    "JQuery",
+    "Gulp",
+    "Git",
+    "Github",
+    "Less",
+    "Service worker",
+    "Browser extension",
+    "Nuxtjs",
+    "PostgreSQL",
+    "Expressjs"
+  ],
+  "features": [
+    "Dock side",
+    "Dark themes",
+    "Code review",
+    "Multiple tabs",
+    "Code font",
+    "Bookmarking",
+    "Caching",
+    "Github Enterprise",
+    "File search",
+    "Show full diff on PR",
+    "Flexible visibility"
+  ],
+  "images": [
+    "/projects/res/op01.png",
+    "/projects/res/op02.png",
+    "/projects/res/op03.png"
+  ]
+}

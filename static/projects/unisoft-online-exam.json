@@ -1,0 +1,51 @@
+{
+  "name": "Unisoft Online Exam",
+  "url": "",
+  "description": "Full featured examination management system",
+  "client": "Thien An Information Technology Company",
+  "achievement": "Being used in 2 universities even before the official launch",
+  "teamSize": 1,
+  "duration": "4 months (2020 Mar - now)",
+  "roles": [
+    "Solo developer",
+    "Backend development",
+    "Frontend development",
+    "UI/UX desgign",
+    "Software architect",
+    "Database design"
+  ],
+  "techs": [
+    "Typesript",
+    "Node.js",
+    "Nest.js",
+    "Vue.js",
+    "Typeorm",
+    "Jest",
+    "SCSS",
+    "Tailwindcss",
+    "SQL Server",
+    "Redis",
+    "Websocket",
+    "Windows server",
+    "IIS",
+    "Git"
+  ],
+  "features": [
+    "Question bank management",
+    "Exam paper bank management",
+    "Exam, Exam result, Room, Supervisor management",
+    "Student, Class, Falcuty, Specialization management",
+    "Admin, Role, Department management",
+    "Dynamic authorization",
+    "View logs and history",
+    "Import from or export to different file format",
+    "Manage exam participation in real-time",
+    "Security enhancement, cheating annihilation",
+    "Ability to integrate with existing system"
+  ],
+  "images": [
+    "/projects/res/ex01.png",
+    "/projects/res/ex02.png",
+    "/projects/res/ex03.png"
+  ]
+}

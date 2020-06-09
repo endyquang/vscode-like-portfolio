@@ -29,18 +29,13 @@
         name="contactme"
         action="/thanks"
         method="post"
-        netlify
         data-netlify="true"
-        netlify-honeypot="bot-field"
         class="fixed bottom-0 right-0 mb-20 mr-22 md:mr-24 lg:mr-28 xl:mr-32 xl:mb-24 pointer-events-auto w-full max-w-md lg:max-w-lg xl:max-w-xl"
         @click.stop
       >
         <div class="mb-3">
           Send me a message
         </div>
-
-        <!-- Hidden input to check for bots -->
-        <input type="hidden" name="form-name" value="contactme">
 
         <input
           ref="email"

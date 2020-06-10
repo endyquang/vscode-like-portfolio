@@ -17,6 +17,7 @@
       :style="{
         maxWidth: $screen.lgDown ? '' : `${1 / tabs.length * 100}%`
       }"
+      @click.middle.stop.prevent="closeTab(tab)"
     >
       <file-name-with-icon
         :file="tab"
@@ -93,6 +94,9 @@ export default {
     },
 
     closeTab (tab) {
+      if (this.tabs.length <= 1) {
+        return
+      }
       const i = this.tabs.indexOf(tab)
       this.tabs.splice(i, 1)
       if (tab.path === this.activePath) {

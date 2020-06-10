@@ -1,7 +1,7 @@
 <template>
   <div>
-    <span class="text-blue-300">{{ field }}</span>: <span v-if="!metadata[field]" class="text-code">'',</span><slot v-else :value="metadata[field]">
-      <span class="text-code">'{{ metadata[field] }}'</span>,
+    <span class="text-blue-300">"{{ field }}"</span>: <slot :value="metadata[field]">
+      <span class="text-code">"{{ metadata[field] }}"</span>,
     </slot>
   </div>
 </template>

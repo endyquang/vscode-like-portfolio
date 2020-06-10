@@ -2,6 +2,7 @@
 
 html {
   font-size: 13.5px;
+  -webkit-tap-highlight-color: transparent;
   @apply bg-layout;
 }
 h1 {

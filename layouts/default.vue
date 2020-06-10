@@ -15,7 +15,8 @@
       <slide-x-right-transition>
         <a
           href="javascript:void(0)"
-          class="lg:hidden fixed z-70 top-0 right-0 mr-3 w-12 h-12 flex justify-center items-center text-gray-300 opacity-75"
+          class="lg:hidden fixed top-0 right-0 mr-3 w-12 h-12 flex justify-center items-center text-gray-300 opacity-75"
+          :class="[navState ? 'z-70' : 'z-30']"
           @click.stop="navState = !navState"
         >
           <b-icon :icon="navState ? 'times' : 'list'" fixed-width />

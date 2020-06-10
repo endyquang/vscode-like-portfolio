@@ -11,7 +11,7 @@
         <key-value-pair :metadata="metadata" field="name" />
 
         <key-value-pair v-slot="{ value }" :metadata="metadata" field="url">
-          <span class="text-code">'<a :href="value" target="_blank" rel="noopener noreferrer" class="underline text-code">{{ value }}</a>'</span>,
+          <span class="text-code">"<a :href="value" target="_blank" rel="noopener noreferrer" class="underline text-code">{{ value }}</a>"</span>,
         </key-value-pair>
 
         <key-value-pair :metadata="metadata" field="description" />
@@ -26,13 +26,13 @@
           <span class="text-yellow-500">{{ value }}</span>,
         </key-value-pair>
 
-        <template v-for="field in ['roles', 'techs', 'features']">
+        <template v-for="(field, j) in ['roles', 'techs', 'features']">
           <key-value-pair :key="field" v-slot="{ value }" :metadata="metadata" :field="field">
             <span class="text-yellow-400">[</span>
             <div v-for="(tech, i) in value" :key="i" class="ml-6">
-              <span class="text-code">'{{ tech }}'</span>{{ i !== value.length - 1 ? ',' : '' }}
+              <span class="text-code">"{{ tech }}"</span>{{ i !== value.length - 1 ? ',' : '' }}
             </div>
-            <span class="text-yellow-400">]</span>
+            <span class="text-yellow-400">]</span><span v-if="j !== 2">,</span>
           </key-value-pair>
         </template>
       </div>
@@ -40,8 +40,8 @@
     </div>
 
     <div
-      class="fixed z-70 inset-0 duration-200 select-none"
-      :class="[slideshowState ? 'bg-popup' : 'pointer-events-none']"
+      class="fixed inset-0 duration-200 select-none"
+      :class="[slideshowState ? 'bg-popup z-70' : 'pointer-events-none z-20']"
       @click.stop="onBgClick"
     >
       <div

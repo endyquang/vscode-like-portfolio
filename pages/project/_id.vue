@@ -118,7 +118,7 @@ export default {
         setTimeout(() => {
           this.imagesState = false
         }, 500)
-      } else {
+      } else if (this.activeImg !== -1) {
         this.shrinking = true
         setTimeout(() => {
           this.shrinking = false

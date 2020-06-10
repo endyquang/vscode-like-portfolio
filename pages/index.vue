@@ -1,5 +1,5 @@
 <template>
-  <auto-line-wrapper class="pr-4">
+  <auto-line-wrapper class="pr-4" :counter-width="$screen.lg ? '5rem' : '2.5rem'">
     <br>
     <br>
 

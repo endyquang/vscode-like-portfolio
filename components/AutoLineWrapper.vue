@@ -1,8 +1,8 @@
 <template>
-  <div class="relative" :style="{ paddingLeft: counterWidth }">
+  <div class="relative cursor-text" :style="{ paddingLeft: counterWidth }">
     <div class="absolute flex-shrink-0 w-8 left-0 top-0 bottom-0" :style="{ width: counterWidth, lineHeight: lineHeight + 'px' }">
       <ul class="text-gray-700 select-none">
-        <li v-for="i in lineCount" :key="i" ref="list" class="block text-right pr-8">
+        <li v-for="i in lineCount" :key="i" ref="list" class="block text-right pr-3 lg:pr-8">
           <slot name="counter">
             {{ i }}
           </slot>

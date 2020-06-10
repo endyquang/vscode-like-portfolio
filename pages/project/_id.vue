@@ -1,5 +1,5 @@
 <template>
-  <auto-line-wrapper class="pr-4" @click.native="onBgClick">
+  <auto-line-wrapper class="pr-4" :counter-width="$screen.lg ? '5rem' : '2.5rem'" @click.native="onBgClick">
     <div class="block lg:hidden">
       <br>
       <br>

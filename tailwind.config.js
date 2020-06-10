@@ -24,7 +24,11 @@ module.exports = {
       },
       inset: {
         full: '100%',
-        '-100': '-25rem'
+        '-100': '-25rem',
+        '50vw': '50vw',
+        '50vh': '50vh',
+        5: '1.25rem',
+        16: '4rem'
       },
       margin: {
         28: '7rem',
@@ -41,7 +45,13 @@ module.exports = {
         100: '25rem'
       },
       width: {
-        100: '25rem'
+        100: '25rem',
+        'screen-md': '768px',
+        'screen-lg': '1024px',
+        'screen-xl': '1280px'
+      },
+      height: {
+        26: '6.5rem'
       },
       zIndex: {
         60: '60',
@@ -53,7 +63,8 @@ module.exports = {
     }
   },
   variants: {
-    width: ['responsive', 'hover']
+    width: ['responsive', 'hover'],
+    margin: ['responsive', 'hover']
   },
   plugins: []
 }

@@ -3,27 +3,27 @@ export const state = () => ({
   projects: [
     {
       name: 'UnisoftOnlinExam',
-      filename: 'unisoft-online-exam.pj',
+      filename: 'unisoft-online-exam.json',
       path: '/project/unisoft-online-exam'
     },
     {
       name: 'MangaMutiny',
-      filename: 'manga-mutiny.pj',
+      filename: 'manga-mutiny.json',
       path: '/project/manga-mutiny'
     },
     {
       name: 'Octotree',
-      filename: 'octotree.pj',
+      filename: 'octotree.json',
       path: '/project/octotree'
     },
     {
       name: 'OctotreePro',
-      filename: 'octotree-pro.pj',
+      filename: 'octotree-pro.json',
       path: '/project/octotree-pro'
     },
     {
       name: 'NYRealEstate',
-      filename: 'ny-real-estate.pj',
+      filename: 'ny-real-estate.json',
       path: '/project/ny-real-estate'
     }
   ]

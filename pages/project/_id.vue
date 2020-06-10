@@ -39,23 +39,36 @@
       <span class="text-blue-300">}</span>
     </div>
 
-    <div class="fixed z-20 left-0 bottom-0 lg:left-auto lg:bottom-auto lg:top-0 lg:right-0 w-auto px-5 py-3 lg:mt-12 select-none pointer-events-none max-w-6xl lg:max-w-screen-md xl:max-w-screen-lg 2xl:max-w-screen-xl">
+    <div
+      class="fixed z-70 inset-0 duration-200 select-none"
+      :class="[slideshowState ? 'bg-popup' : 'pointer-events-none']"
+      @click.stop="onBgClick"
+    >
       <div
-        v-for="(img, i) in images"
-        :key="i"
-        class="py-2 lg:ml-auto pointer-events-auto duration-500"
+        class="fixed px-5 pointer-events-none duration-500 left-0 lg:left-auto lg:max-w-screen-lg xl:max-w-screen-xl"
         :class="[
-          activeImg === i
-            ? 'w-full cursor-zoom-out shadow-2xl'
-            : 'cursor-zoom-in opacity-75 hover:opacity-100 w-32 lg:hover:w-64'
+          slideshowState
+            ? 'w-full lg:right-50vw top-50vh transform lg:translate-x-1/2 -translate-y-1/2'
+            : 'w-48 bottom-5 lg:bottom-auto lg:right-0 lg:top-16'
         ]"
-        :style="{
-          'margin-bottom': $screen.lgDown && !imagesState && i !== images.length - 1 ? `-68%` : ''
-        }"
-        @click.stop="onImgClick(i)"
       >
-        <div class="p-2 bg-slide rounded" style="min-height: 4.4rem;">
-          <img :src="img" class="rounded">
+        <div
+          v-for="(img, i) in images"
+          :key="i"
+          class="mx-auto py-2 pointer-events-auto w-40 cursor-zoom-in"
+          :class="[
+            slideshowState
+              ? activeImg === i ? 'cursor-zoom-out w-full' : 'hidden'
+              : shrinking && activeImg !== i ? 'pt-0 pb-0 h-0 overflow-hidden' : 'h-26 lg:opacity-75 lg:hover:opacity-100 duration-500'
+          ]"
+          :style="{
+            'margin-bottom': $screen.lgDown && !imagesState && i !== images.length - 1 ? `-68%` : ''
+          }"
+          @click.stop="onImgClick(i)"
+        >
+          <div class="p-2 bg-slide rounded" style="min-height: 4.4rem;">
+            <img :src="img" class="rounded">
+          </div>
         </div>
       </div>
     </div>
@@ -82,7 +95,13 @@ export default {
       metadata: null,
       images: [],
       activeImg: -1,
-      imagesState: false
+      imagesState: false,
+      shrinking: false
+    }
+  },
+  computed: {
+    slideshowState () {
+      return !this.shrinking && this.activeImg !== -1
     }
   },
   methods: {
@@ -94,10 +113,19 @@ export default {
       }
     },
     onBgClick () {
-      this.activeImg = -1
-      setTimeout(() => {
-        this.imagesState = false
-      }, 500)
+      if (this.$screen.lgDown) {
+        this.activeImg = -1
+        setTimeout(() => {
+          this.imagesState = false
+        }, 500)
+      } else {
+        this.shrinking = true
+        setTimeout(() => {
+          this.shrinking = false
+          this.activeImg = -1
+          this.imagesState = false
+        }, 500)
+      }
     }
   },
   head () {

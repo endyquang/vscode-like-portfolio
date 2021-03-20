@@ -6,9 +6,9 @@
     <auto-comment-wrapper>
       <span class="text-blue-300">Hi, i’m Quang</span> (pronounced /kwang/, or just call me ND) - a full stack web developer who love freelancing and keep challenging himself with impactful projects.
       <br>
-      Based in Ha Noi (GMT+7). Experienced 3 years in web development.
+      Based in Ha Noi (GMT+7). Experienced 4 years in web development.
       <br>
-      I am currently available for new opportunities.
+      I am open for new opportunities.
     </auto-comment-wrapper>
 
     <br>
@@ -76,11 +76,10 @@ export default {
         'Nodejs',
         'Vuejs',
         'MongoDB',
-        'MySQL',
+        'PostgreSQL',
         'Redis',
         'Git',
         'Linux',
-        'Docker',
         'Firebase',
         'and_more'
       ]

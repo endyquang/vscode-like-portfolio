@@ -1,6 +1,17 @@
 
 export const state = () => ({
   projects: [
+    // TODO Add new projects info
+    {
+      name: 'Co-wellness',
+      filename: 'co-wellness.json',
+      path: ''
+    },
+    {
+      name: 'Tomisha',
+      filename: 'tomisha.json',
+      path: ''
+    },
     {
       name: 'UnisoftOnlinExam',
       filename: 'unisoft-online-exam.json',

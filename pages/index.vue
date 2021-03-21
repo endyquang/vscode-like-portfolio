@@ -29,7 +29,7 @@
     <br>
 
     <auto-comment-wrapper counter-width="2rem">
-      A few projects that i have joined in the past 12 months
+      A few projects that i have joined in the past 24 months
     </auto-comment-wrapper>
 
     <span class="text-yellow-400">[</span>

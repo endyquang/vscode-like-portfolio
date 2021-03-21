@@ -2,6 +2,12 @@
 export const state = () => ({
   projects: [
     {
+      name: 'Co-wellness'
+    },
+    {
+      name: 'Tomisha'
+    },
+    {
       name: 'UnisoftOnlinExam',
       filename: 'unisoft-online-exam.json',
       path: '/project/unisoft-online-exam'

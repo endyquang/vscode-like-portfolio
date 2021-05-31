@@ -55,7 +55,7 @@
         <div
           v-for="(img, i) in images"
           :key="i"
-          class="mx-auto py-2 pointer-events-auto w-40 cursor-zoom-in"
+          class="mx-auto py-2 pointer-events-auto w-40 cursor-zoom-in text-center"
           :class="[
             slideshowState
               ? activeImg === i ? 'cursor-zoom-out w-full' : 'hidden'
@@ -66,7 +66,7 @@
           }"
           @click.stop="onImgClick(i)"
         >
-          <div class="p-2 bg-slide rounded" style="min-height: 4.4rem;">
+          <div class="p-2 bg-slide rounded max-h-full overflow-hidden inline-block" style="min-height: 4.4rem;">
             <img :src="img" class="rounded">
           </div>
         </div>

@@ -1,0 +1,52 @@
+{
+  "name": "Tomisha",
+  "url": "https://tomisha.io",
+  "description": "Progressive Job portal for low-end jobs",
+  "client": "Tomisha .ltd",
+  "achievement": "Build a pixel perfect website that works consitently cross browser and OS",
+  "teamSize": 1,
+  "duration": "6 months (2020 Jun - 2020 Nov)",
+  "roles": [
+    "Solo developer",
+    "Backend development",
+    "Frontend development",
+    "UI/UX desgign for admin site",
+    "Software architect",
+    "Database design",
+    "Database management",
+    "Server management",
+    "QA"
+  ],
+  "techs": [
+    "Node.js",
+    "Nest.js",
+    "Nuxt.js",
+    "PostgreSQL",
+    "Redis",
+    "Cypress",
+    "SCSS",
+    "PostCSS",
+    "Tailwindcss",
+    "Progressive web app",
+    "Linux",
+    "Nginx",
+    "Git",
+    "Cloudflare"
+  ],
+  "features": [
+    "Easy account creation",
+    "Profile & professions",
+    "Job ads",
+    "Job ads search and fitler",
+    "Application",
+    "Interview",
+    "Network",
+    "Offer"
+  ],
+  "images": [
+    "/projects/res/tm01.png",
+    "/projects/res/tm02.png",
+    "/projects/res/tm03.png",
+    "/projects/res/tm04.png"
+  ]
+}

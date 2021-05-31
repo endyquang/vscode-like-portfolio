@@ -5,12 +5,12 @@ export const state = () => ({
     {
       name: 'Co-wellness',
       filename: 'co-wellness.json',
-      path: ''
+      path: '/project/cowellness'
     },
     {
       name: 'Tomisha',
       filename: 'tomisha.json',
-      path: ''
+      path: '/project/tomisha'
     },
     {
       name: 'UnisoftOnlinExam',

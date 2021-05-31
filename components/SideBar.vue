@@ -1,11 +1,11 @@
 <template>
-  <aside class="bg-aside text-gray-400 select-none">
+  <aside class="bg-aside text-gray-400">
     <nav class="lg:sticky top-0">
       <div class="text-lg h-12 flex items-center px-6 lg:px-8 text-gray-600">
         Xin chào!
       </div>
 
-      <ul>
+      <ul class="select-none">
         <li
           v-for="(page, i) in pages"
           :key="i"

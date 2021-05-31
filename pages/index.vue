@@ -4,7 +4,7 @@
     <br>
 
     <auto-comment-wrapper>
-      <span class="text-blue-300">Hi, i’m Quang</span> (pronounced /kwang/, or just call me ND) - a full stack web developer who love freelancing and keep challenging himself with impactful projects.
+      <span class="text-blue-300">Hi, i’m Quang</span> (pronounced /kwang/, or just call me ND) - a full stack web developer who love coding and keep challenging himself with impactful projects.
       <br>
       Based in Ha Noi (GMT+7). Experienced 4 years in web development.
       <br>
@@ -15,7 +15,7 @@
     <br>
 
     <auto-comment-wrapper counter-width="2rem">
-      Technologies that i use everyday
+      Technologies that I use everyday
     </auto-comment-wrapper>
 
     <span class="text-yellow-400">[</span>
@@ -29,7 +29,7 @@
     <br>
 
     <auto-comment-wrapper counter-width="2rem">
-      A few projects that i have joined in the past 24 months
+      A few projects that I have joined in the past 24 months
     </auto-comment-wrapper>
 
     <span class="text-yellow-400">[</span>
@@ -73,14 +73,16 @@ export default {
         'CSS3',
         'Javascript',
         'Typescript',
-        'Nodejs',
-        'Vuejs',
-        'MongoDB',
+        'Node.js',
+        'Nest.js',
+        'Vue.js',
         'PostgreSQL',
+        'MongoDB',
         'Redis',
         'Git',
         'Linux',
         'Firebase',
+        'Docker',
         'and_more'
       ]
     }

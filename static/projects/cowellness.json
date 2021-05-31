@@ -1,0 +1,42 @@
+{
+  "name": "Co-wellness",
+  "url": "https://www.co-wellness.com/",
+  "description": "GYM ERD software, built as a SaaS for gym entities in Europe",
+  "client": "Co-wellness .Ltd",
+  "achievement": "Build a front-end project from ground up with great architecture and solutions",
+  "teamSize": 10,
+  "duration": "10 months (2020 Sep - 2021 Jul)",
+  "roles": [
+    "Lead front-end developer"
+  ],
+  "techs": [
+    "Vue.js",
+    "Nuxt.js",
+    "Redis",
+    "SCSS",
+    "PostCSS",
+    "TailwindCSS",
+    "PWA",
+    "Git"
+  ],
+  "features": [
+    "Gyms management",
+    "Legal documents management",
+    "Users management",
+    "Roles management",
+    "Shop",
+    "Promotions",
+    "Gymer training plans",
+    "Accounting",
+    "Payroll",
+    "Calendar",
+    "Multiple PWAs",
+    "Real-time Chat",
+    "Real-time notification"
+  ],
+  "images": [
+    "/projects/res/cw01.png",
+    "/projects/res/cw02.png",
+    "/projects/res/cw03.png"
+  ]
+}
